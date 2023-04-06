@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Generate QR Code</title>
+</head>
+<body>
+	<h1>Generate QR Code</h1>
+	<p>Here is the user information you provided:</p>
+	<ul>
+	{% for key, value in user_info.items() %}
+		<li>{{ key }}: {{ value }}</li>
+	{% endfor %}
+	</ul>
+	<img src="{{ qr_code }}" alt="QR Code">
+	<br><br>
+	<a href="{{ url_for('home') }}">Back to Input Page</a>
+</body>
+</html>

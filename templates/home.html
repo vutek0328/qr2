@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Input Your Information</title>
+</head>
+<body>
+	<h1>Input Your Information</h1>
+	<form action="{{ url_for('generate_qr_code') }}" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"><br><br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email"><br><br>
+		<label for="linkedin">LinkedIn:</label>
+		<input type="text" id="linkedin" name="linkedin"><br><br>
+		<label for="instagram">Instagram:</label>
+		<input type="text" id="instagram" name="instagram"><br><br>
+		<label for="phone">Phone Number:</label>
+		<input type="tel" id="phone" name="phone"><br><br>
+		<input type="submit" value="Generate QR Code">
+	</form>
+</body>
+</html>
